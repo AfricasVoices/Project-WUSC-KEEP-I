@@ -18,7 +18,7 @@ mkdir -p "$DATA_DIR/03 Messages Merged"
 SHOWS_AND_ADVERTS=(
     "AISHA"   "Adverts"           "Aisha_merged"
     "MOHAMED" "Advert (Mohamed)"  "Mohamed_merged"
-    "ZAMZAM"  "Advert(Zamzam)"    "Zamxam_merged"
+    "ZAMZAM"  "Advert(Zamzam)"    "Zamzam_merged"
     )
 
 
