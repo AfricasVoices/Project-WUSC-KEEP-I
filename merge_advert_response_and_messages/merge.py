@@ -31,7 +31,7 @@ if __name__ == "__main__":
     for td in adverts_data:
         assert "QUESTION_R" in td.keys()
         td.append_data(
-            { "Messsage" : td["QUESTION_R"]}, 
+            { "Message" : td["QUESTION_R"]}, 
             Metadata(user, Metadata.get_call_location(), time.time()))
 
     merged_data = list(messages_data)
