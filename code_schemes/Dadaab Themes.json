@@ -1,0 +1,264 @@
+{
+  "Codes": [
+    {
+      "CodeID": "code-42f352e9c2d3",
+      "CodeType": "Normal",
+      "DisplayText": "Acceptable in culture",
+      "NumericValue": 1,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-e909d13c60d4",
+      "CodeType": "Normal",
+      "DisplayText": "Awareness creation",
+      "NumericValue": 2,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-bb797f237bce",
+      "CodeType": "Normal",
+      "DisplayText": "Benefit others (immediate family)",
+      "NumericValue": 3,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-553c8e7caff7",
+      "CodeType": "Normal",
+      "DisplayText": "Better future",
+      "NumericValue": 4,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a463703bed30",
+      "CodeType": "Normal",
+      "DisplayText": "Difficulties during child birth",
+      "NumericValue": 5,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b28dc06503cb",
+      "CodeType": "Normal",
+      "DisplayText": "Do both (school and chores)",
+      "NumericValue": 6,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1c745b6a8631",
+      "CodeType": "Normal",
+      "DisplayText": "Education has no use",
+      "NumericValue": 7,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-85620af0b43d",
+      "CodeType": "Normal",
+      "DisplayText": "Education is important",
+      "NumericValue": 8,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f9c25acbabc8",
+      "CodeType": "Normal",
+      "DisplayText": "Education is light",
+      "NumericValue": 9,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1b4e79c4f21a",
+      "CodeType": "Normal",
+      "DisplayText": "Equality",
+      "NumericValue": 10,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-9c00d76f611f",
+      "CodeType": "Normal",
+      "DisplayText": "Future leaders",
+      "NumericValue": 11,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-8d6fcacc5b6a",
+      "CodeType": "Normal",
+      "DisplayText": "Girls value education more",
+      "NumericValue": 12,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a74f9e107eb2",
+      "CodeType": "Normal",
+      "DisplayText": "God is the provider (school)",
+      "NumericValue": 13,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-88800b0f3768",
+      "CodeType": "Normal",
+      "DisplayText": "Her place is kitchen ",
+      "NumericValue": 14,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3f462a29823f",
+      "CodeType": "Normal",
+      "DisplayText": "Islamic school",
+      "NumericValue": 15,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-7e7d88e5d79f",
+      "CodeType": "Normal",
+      "DisplayText": "It is a thing of the past",
+      "NumericValue": 16,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-0e7d8365d67b",
+      "CodeType": "Normal",
+      "DisplayText": "It is for her to decide",
+      "NumericValue": 17,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-013268b54375",
+      "CodeType": "Normal",
+      "DisplayText": "Life/education more important than money",
+      "NumericValue": 18,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a7a083449091",
+      "CodeType": "Normal",
+      "DisplayText": "Marriage as protection",
+      "NumericValue": 19,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5aa02aeeb73a",
+      "CodeType": "Normal",
+      "DisplayText": "Obey parents",
+      "NumericValue": 20,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-073ce0df2507",
+      "CodeType": "Normal",
+      "DisplayText": "Parents don't benefit",
+      "NumericValue": 21,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b214a5ee5a5b",
+      "CodeType": "Normal",
+      "DisplayText": "Receive blessings",
+      "NumericValue": 22,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-e14624ca4d29",
+      "CodeType": "Normal",
+      "DisplayText": "Religion allows",
+      "NumericValue": 23,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c75817ab2a18",
+      "CodeType": "Normal",
+      "DisplayText": "Right to education",
+      "NumericValue": 24,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-91a20204c0b9",
+      "CodeType": "Normal",
+      "DisplayText": "School is not good",
+      "NumericValue": 25,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-37cd03578229",
+      "CodeType": "Normal",
+      "DisplayText": "She will be negatively influenced at home",
+      "NumericValue": 26,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-beee0122c704",
+      "CodeType": "Normal",
+      "DisplayText": "Societal benefits",
+      "NumericValue": 27,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3ff69baa8eb1",
+      "CodeType": "Normal",
+      "DisplayText": "To protect her health",
+      "NumericValue": 28,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5bda773edf12",
+      "CodeType": "Normal",
+      "DisplayText": "Too young",
+      "NumericValue": 29,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-84fa0d6d55cd",
+      "CodeType": "Normal",
+      "DisplayText": "Other (no school)",
+      "NumericValue": 30,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-57232b6f7ff9",
+      "CodeType": "Normal",
+      "DisplayText": "Other (school)",
+      "NumericValue": 31,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NA-f93d3eb7",
+      "CodeType": "Control",
+      "ControlCode": "NA",
+      "DisplayText": "NA (missing)",
+      "NumericValue": -10,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NS-2c11b7c9",
+      "CodeType": "Control",
+      "ControlCode": "NS",
+      "DisplayText": "NS (skip)",
+      "NumericValue": -20,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NC-42f1d983",
+      "CodeType": "Control",
+      "ControlCode": "NC",
+      "DisplayText": "NC (not coded)",
+      "NumericValue": -30,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NR-5e3eee23",
+      "CodeType": "Control",
+      "ControlCode": "NR",
+      "DisplayText": "NR (not reviewed)",
+      "NumericValue": -40,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-WS-adb25603b7af",
+      "CodeType": "Control",
+      "ControlCode": "WS",
+      "DisplayText": "WS (wrong scheme)",
+      "NumericValue": -100,
+      "VisibleInCoda": true
+    }
+  ],
+  "Name": "Dadaab Themes",
+  "SchemeID": "Scheme-f64e71241422",
+  "Version": "0.0.0.1"
+}
