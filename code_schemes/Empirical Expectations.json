@@ -1,0 +1,87 @@
+{
+  "Codes": [
+    {
+      "CodeID": "code-3453e7476a10",
+      "CodeType": "Normal",
+      "DisplayText": "none",
+      "NumericValue": 1,
+      "Shortcut": "n",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-0a47e54774c0",
+      "CodeType": "Normal",
+      "DisplayText": "few",
+      "NumericValue": 2,
+      "Shortcut": "f",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ff1dcbf44155",
+      "CodeType": "Normal",
+      "DisplayText": "some",
+      "NumericValue": 3,
+      "Shortcut": "s",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a32b6682d4ed",
+      "CodeType": "Normal",
+      "DisplayText": "most",
+      "NumericValue": 4,
+      "Shortcut": "m",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-0ea3c2b1dd97",
+      "CodeType": "Normal",
+      "DisplayText": "all",
+      "NumericValue": 5,
+      "Shortcut": "a",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NA-f93d3eb7",
+      "CodeType": "Control",
+      "ControlCode": "NA",
+      "DisplayText": "NA (missing)",
+      "NumericValue": -10,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NS-2c11b7c9",
+      "CodeType": "Control",
+      "ControlCode": "NS",
+      "DisplayText": "NS (skip)",
+      "NumericValue": -20,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NC-42f1d983",
+      "CodeType": "Control",
+      "ControlCode": "NC",
+      "DisplayText": "NC (not coded)",
+      "NumericValue": -30,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NR-5e3eee23",
+      "CodeType": "Control",
+      "ControlCode": "NR",
+      "DisplayText": "NR (not reviewed)",
+      "NumericValue": -40,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-WS-adb25603b7af",
+      "CodeType": "Control",
+      "ControlCode": "WS",
+      "DisplayText": "WS (wrong scheme)",
+      "NumericValue": -100,
+      "VisibleInCoda": true
+    }
+  ],
+  "Name": "Empirical Expectations",
+  "SchemeID": "Scheme-9b961ca7061d",
+  "Version": "0.0.0.1"
+}

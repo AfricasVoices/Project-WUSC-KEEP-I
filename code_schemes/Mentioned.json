@@ -1,0 +1,63 @@
+{
+  "Codes": [
+    {
+      "CodeID": "code-2a736849647c",
+      "CodeType": "Normal",
+      "DisplayText": "not mentioned",
+      "NumericValue": 1,
+      "Shortcut": "n",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-53f4e33b2bf7",
+      "CodeType": "Normal",
+      "DisplayText": "mentioned",
+      "NumericValue": 2,
+      "Shortcut": "m",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NA-f93d3eb7",
+      "CodeType": "Control",
+      "ControlCode": "NA",
+      "DisplayText": "NA (missing)",
+      "NumericValue": -10,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NS-2c11b7c9",
+      "CodeType": "Control",
+      "ControlCode": "NS",
+      "DisplayText": "NS (skip)",
+      "NumericValue": -20,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NC-42f1d983",
+      "CodeType": "Control",
+      "ControlCode": "NC",
+      "DisplayText": "NC (not coded)",
+      "NumericValue": -30,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NR-5e3eee23",
+      "CodeType": "Control",
+      "ControlCode": "NR",
+      "DisplayText": "NR (not reviewed)",
+      "NumericValue": -40,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-WS-adb25603b7af",
+      "CodeType": "Control",
+      "ControlCode": "WS",
+      "DisplayText": "WS (wrong scheme)",
+      "NumericValue": -100,
+      "VisibleInCoda": true
+    }
+  ],
+  "Name": "Mentioned",
+  "SchemeID": "Scheme-08a73789a0c6",
+  "Version": "0.0.0.1"
+}

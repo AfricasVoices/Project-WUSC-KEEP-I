@@ -1,0 +1,71 @@
+{
+  "Codes": [
+    {
+      "CodeID": "code-ddaf8c321197",
+      "CodeType": "Normal",
+      "DisplayText": "disapprove",
+      "NumericValue": 1,
+      "Shortcut": "d",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-e828165b6b81",
+      "CodeType": "Normal",
+      "DisplayText": "approve",
+      "NumericValue": 2,
+      "Shortcut": "a",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-bfdc6d1905fe",
+      "CodeType": "Normal",
+      "DisplayText": "neutral",
+      "NumericValue": 3,
+      "Shortcut": "n",
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NA-f93d3eb7",
+      "CodeType": "Control",
+      "ControlCode": "NA",
+      "DisplayText": "NA (missing)",
+      "NumericValue": -10,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NS-2c11b7c9",
+      "CodeType": "Control",
+      "ControlCode": "NS",
+      "DisplayText": "NS (skip)",
+      "NumericValue": -20,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NC-42f1d983",
+      "CodeType": "Control",
+      "ControlCode": "NC",
+      "DisplayText": "NC (not coded)",
+      "NumericValue": -30,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NR-5e3eee23",
+      "CodeType": "Control",
+      "ControlCode": "NR",
+      "DisplayText": "NR (not reviewed)",
+      "NumericValue": -40,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-WS-adb25603b7af",
+      "CodeType": "Control",
+      "ControlCode": "WS",
+      "DisplayText": "WS (wrong scheme)",
+      "NumericValue": -100,
+      "VisibleInCoda": true
+    }
+  ],
+  "Name": "Approval",
+  "SchemeID": "Scheme-175d40b56611",
+  "Version": "0.0.0.1"
+}
