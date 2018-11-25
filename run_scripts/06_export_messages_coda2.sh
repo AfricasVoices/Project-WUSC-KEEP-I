@@ -3,7 +3,7 @@
 set -e
 
 if [ $# -ne 2 ]; then
-    echo "Usage: sh 05_export_messages_to_coda2.sh <user> <data-root>"
+    echo "Usage: sh 06_export_messages_to_coda2.sh <user> <data-root>"
     echo "Exports messages to Coda2 for labelling"
     exit
 fi
