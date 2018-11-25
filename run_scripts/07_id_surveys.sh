@@ -18,10 +18,10 @@ cd ../id_surveys
 mkdir -p "$DATA_DIR/07 Surveys with ID"
 
 SURVEYS=(
-    "Dadaab follow up survey(Amina-Edu)"    "Amina_survery_with_id"
-    "Dadaab follow up survey (Aisha-mar)"   "Aisha_survery_with_id"
-    "Dadaab follow up survey(Mohamed-ed)"   "Mohamed_survery_with_id"
-    "Dadaab follow up survey(Zamzam Cho)"   "Zamzam_survery_with_id"
+    "Dadaab follow up survey(Amina-Edu)"    "Amina_survey_with_id"
+    "Dadaab follow up survey (Aisha-mar)"   "Aisha_survey_with_id"
+    "Dadaab follow up survey(Mohamed-ed)"   "Mohamed_survey_with_id"
+    "Dadaab follow up survey(Zamzam Cho)"   "Zamzam_survey_with_id"
     )
 
 for i in $(seq 0 $((${#SURVEYS[@]} / 2 - 1)))
