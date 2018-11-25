@@ -1,0 +1,59 @@
+{
+  "Codes": [
+    {
+      "CodeID": "code-83eedfa2fa28",
+      "CodeType": "Normal",
+      "DisplayText": "Host",
+      "NumericValue": 0,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-21b4c5cdb353",
+      "CodeType": "Normal",
+      "DisplayText": "Ifo - Refugee camp",
+      "NumericValue": 1,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-8756f5a5f24f",
+      "CodeType": "Normal",
+      "DisplayText": "Hagardera - Refugee camp",
+      "NumericValue": 2,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ba4d6456e7fa",
+      "CodeType": "Normal",
+      "DisplayText": "Dagahley - Refugee camp",
+      "NumericValue": 3,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NA-f93d3eb7",
+      "CodeType": "Control",
+      "ControlCode": "NA",
+      "DisplayText": "NA (missing)",
+      "NumericValue": -10,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NC-42f1d983",
+      "CodeType": "Control",
+      "ControlCode": "NC",
+      "DisplayText": "NC (not coded)",
+      "NumericValue": -30,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-WS-adb25603b7af",
+      "CodeType": "Control",
+      "ControlCode": "WS",
+      "DisplayText": "WS (wrong scheme)",
+      "NumericValue": -100,
+      "VisibleInCoda": true
+    }
+  ],
+  "Name": "Location",
+  "SchemeID": "Scheme-1bafb7b360d9",
+  "Version": "0.0.0.1"
+}
