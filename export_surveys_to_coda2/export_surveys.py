@@ -54,6 +54,8 @@ if __name__ == "__main__":
             continue
 
         message_text = td[var_name]
+        if message_text == "":
+            continue
 
         if "Date" in td.keys():
             date = td["Date"]
