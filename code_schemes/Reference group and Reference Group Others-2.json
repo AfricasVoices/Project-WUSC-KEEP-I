@@ -1,0 +1,255 @@
+{
+  "Codes": [
+    {
+      "CodeID": "code-a97f64e6bddb",
+      "CodeType": "Normal",
+      "DisplayText": "Allah",
+      "NumericValue": 0,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-fcb4896f629a",
+      "CodeType": "Normal",
+      "DisplayText": "Aunts",
+      "NumericValue": 1,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-557840b612ad",
+      "CodeType": "Normal",
+      "DisplayText": "Brother",
+      "NumericValue": 2,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-62884ee94703",
+      "CodeType": "Normal",
+      "DisplayText": "Community",
+      "NumericValue": 3,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-5d1320bcbd6f",
+      "CodeType": "Normal",
+      "DisplayText": "Daughter",
+      "NumericValue": 4,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-072cdeb7663e",
+      "CodeType": "Normal",
+      "DisplayText": "Daughter herself/ daughter themselves",
+      "NumericValue": 5,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-e366df023e25",
+      "CodeType": "Normal",
+      "DisplayText": "Educated people",
+      "NumericValue": 6,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c56cdba08df3",
+      "CodeType": "Normal",
+      "DisplayText": "Education organisations",
+      "NumericValue": 7,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-ac909e98e58a",
+      "CodeType": "Normal",
+      "DisplayText": "Father",
+      "NumericValue": 8,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-6010bee74eb0",
+      "CodeType": "Normal",
+      "DisplayText": "Fathers and his children",
+      "NumericValue": 9,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b50584013937",
+      "CodeType": "Normal",
+      "DisplayText": "First born of the family",
+      "NumericValue": 10,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-375b03212081",
+      "CodeType": "Normal",
+      "DisplayText": "Friends",
+      "NumericValue": 11,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-57554572d534",
+      "CodeType": "Normal",
+      "DisplayText": "Ignorant people",
+      "NumericValue": 12,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-a7da178717e0",
+      "CodeType": "Normal",
+      "DisplayText": "Human rights people",
+      "NumericValue": 13,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-c2ac0796fdb7",
+      "CodeType": "Normal",
+      "DisplayText": "Husband",
+      "NumericValue": 14,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f5ba1b72965e",
+      "CodeType": "Normal",
+      "DisplayText": "KEEP and education areas",
+      "NumericValue": 15,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-65aa19c031be",
+      "CodeType": "Normal",
+      "DisplayText": "Mother",
+      "NumericValue": 16,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-cbedf11cfcb9",
+      "CodeType": "Normal",
+      "DisplayText": "Mother and father",
+      "NumericValue": 17,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-b842df1ffc96",
+      "CodeType": "Normal",
+      "DisplayText": "My friend",
+      "NumericValue": 18,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d033287b1ae1",
+      "CodeType": "Normal",
+      "DisplayText": "Myself",
+      "NumericValue": 19,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-9ada7c598f80",
+      "CodeType": "Normal",
+      "DisplayText": "Neighbours",
+      "NumericValue": 20,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-1dc63361d99a",
+      "CodeType": "Normal",
+      "DisplayText": "No one",
+      "NumericValue": 21,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-20e1ac8280be",
+      "CodeType": "Normal",
+      "DisplayText": "Parents in similar situation",
+      "NumericValue": 22,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-bd5f4315a25c",
+      "CodeType": "Normal",
+      "DisplayText": "Radio gargaar",
+      "NumericValue": 23,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-006c440d00e1",
+      "CodeType": "Normal",
+      "DisplayText": "Relatives",
+      "NumericValue": 24,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-05a4dd0779ac",
+      "CodeType": "Normal",
+      "DisplayText": "Religious leaders",
+      "NumericValue": 25,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-fdfe6f484400",
+      "CodeType": "Normal",
+      "DisplayText": "Sensible/wise people",
+      "NumericValue": 26,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-11bb10a2d8ca",
+      "CodeType": "Normal",
+      "DisplayText": "Teacher",
+      "NumericValue": 27,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f97f97a3e67e",
+      "CodeType": "Normal",
+      "DisplayText": "Uncles",
+      "NumericValue": 28,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-f250561622ae",
+      "CodeType": "Normal",
+      "DisplayText": "Wife",
+      "NumericValue": 29,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-3fe998a39418",
+      "CodeType": "Normal",
+      "DisplayText": "Women from the community",
+      "NumericValue": 30,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-d759761932fd",
+      "CodeType": "Normal",
+      "DisplayText": "Other",
+      "NumericValue": 31,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NA-f93d3eb7",
+      "CodeType": "Control",
+      "ControlCode": "NA",
+      "DisplayText": "NA (missing)",
+      "NumericValue": -10,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NC-42f1d983",
+      "CodeType": "Control",
+      "ControlCode": "NC",
+      "DisplayText": "NC (not coded)",
+      "NumericValue": -30,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-WS-adb25603b7af",
+      "CodeType": "Control",
+      "ControlCode": "WS",
+      "DisplayText": "WS (wrong scheme)",
+      "NumericValue": -100,
+      "VisibleInCoda": true
+    }
+  ],
+  "Name": "Reference group and Reference Group Others",
+  "SchemeID": "Scheme-8dea437568c3-2",
+  "Version": "0.0.0.1"
+}
