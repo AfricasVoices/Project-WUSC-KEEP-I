@@ -28,7 +28,8 @@ VAR_NAMES=(
     "Selected_Empirical_Expectations"
     "Selected_Normative_Expectations"
     "Selected_Parenthood"
-    # "Selected_Reference_Groups"
+    "Selected_Reference_Groups"
+    "Selected_Reference_Groups_Others"
     "Selected_Sanctions"
 )
 
