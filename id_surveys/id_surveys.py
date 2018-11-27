@@ -27,11 +27,8 @@ if __name__ == "__main__":
         selected_nomrative_expectations = td["NORMATIVE EXPECTATIONS_R"]
         selected_parenthood = td["PARENTHOOD_R"]
         selected_reference_groups = td["REFERENCE GROUPS_R"]
-
-        if "SANCTION_R" in td.keys():
-            selected_sanctions = td["SANCTION_R"]
-        else:
-            selected_sanctions = td["SANCTIONS_R"]
+        selected_reference_groups_others = td["REFERENCE GROUPS OTHERS_R"]
+        selected_sanctions = td["SANCTIONS_R"]
 
         td.append_data(
             {
@@ -40,12 +37,14 @@ if __name__ == "__main__":
                 "Selected_Parenthood" : selected_parenthood,
                 "Selected_Sanctions" : selected_sanctions,
                 "Selected_Reference_Groups" : selected_reference_groups,
+                "Selected_Reference_Groups_Others" : selected_reference_groups_others,
 
                 "Coda-Id-Empirical_Expectations" : SHAUtils.sha_string(selected_empirical_expectations),
                 "Coda-Id-Normative_Expectations" : SHAUtils.sha_string(selected_nomrative_expectations),
                 "Coda-Id-Parenthood" : SHAUtils.sha_string(selected_parenthood),
                 "Coda-Id-Sanctions" : SHAUtils.sha_string(selected_sanctions),
-                "Coda-Id-Reference_Groups" : SHAUtils.sha_string(selected_reference_groups)
+                "Coda-Id-Reference_Groups" : SHAUtils.sha_string(selected_reference_groups),
+                "Coda-Id-Reference_Groups_Others" : SHAUtils.sha_string(selected_reference_groups_others)
 
                 },
             Metadata(user, Metadata.get_call_location(), time.time()))
