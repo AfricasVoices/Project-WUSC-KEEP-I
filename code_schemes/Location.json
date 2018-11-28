@@ -29,6 +29,20 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-697366f7",
+      "CodeType": "Normal",
+      "DisplayText": "Other - Refugee camp",
+      "NumericValue": 4,
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-24a47c2d",
+      "CodeType": "Normal",
+      "DisplayText": "Other",
+      "NumericValue": 5,
+      "VisibleInCoda": true
+    },
+    {
       "CodeID": "code-NA-f93d3eb7",
       "CodeType": "Control",
       "ControlCode": "NA",
