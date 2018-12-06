@@ -277,7 +277,7 @@ if __name__ == "__main__":
         for key in folded_column_keys:
             if key not in td:
                 d[key] = Codes.TRUE_MISSING
-        td.append_data(d, Metadata(rita, Metadata.get_call_location(), time.time()))
+        td.append_data(d, Metadata(user, Metadata.get_call_location(), time.time()))
 
     # Export to CSV
     export_keys = list(folded_column_keys)
