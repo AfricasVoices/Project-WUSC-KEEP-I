@@ -164,42 +164,42 @@ if __name__ == "__main__":
 
     CodingPlan(raw_field="Reference_Groups - Amina_survey",
                 coded_field="Reference_Groups - Amina_survey_Coded",
-                analysis_file_key="w1_ref_groups_dadaab",
+                analysis_file_key="w1_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
     CodingPlan(raw_field="Reference_Groups - Aisha_survey",
                 coded_field="Reference_Groups - Aisha_survey_Coded",
-                analysis_file_key="w2_ref_groups_dadaab",
+                analysis_file_key="w2_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
     CodingPlan(raw_field="Reference_Groups - Mohamed_survey",
                 coded_field="Reference_Groups - Mohamed_survey_Coded",
-                analysis_file_key="w3_ref_groups_dadaab",
+                analysis_file_key="w3_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
     CodingPlan(raw_field="Reference_Groups - Zamzam_survey",
                 coded_field="Reference_Groups - Zamzam_survey_Coded",
-                analysis_file_key="w4_ref_groups_dadaab",
+                analysis_file_key="w4_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
     CodingPlan(raw_field="Reference_Groups_Others - Amina_survey",
                 coded_field="Reference_Groups_Others - Amina_survey_Coded",
-                analysis_file_key="w1_ref_groups_dadaab",
+                analysis_file_key="w1_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
     CodingPlan(raw_field="Reference_Groups_Others - Aisha_survey",
                 coded_field="Reference_Groups_Others - Aisha_survey_Coded",
-                analysis_file_key="w2_ref_groups_dadaab",
+                analysis_file_key="w2_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
     CodingPlan(raw_field="Reference_Groups_Others - Mohamed_survey",
                 coded_field="Reference_Groups_Others - Mohamed_survey_Coded",
-                analysis_file_key="w3_ref_groups_dadaab",
+                analysis_file_key="w3_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
     CodingPlan(raw_field="Reference_Groups_Others - Zamzam_survey",
                 coded_field="Reference_Groups_Others - Zamzam_survey_Coded",
-                analysis_file_key="w4_ref_groups_dadaab",
+                analysis_file_key="w4_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"])
     ]
     
@@ -214,17 +214,21 @@ if __name__ == "__main__":
             survey_keys.append(plan.analysis_file_key)
         if plan.raw_field not in survey_keys:
             survey_keys.append(plan.raw_field)
+    print(survey_keys)
+
+    for td in data:
+        for key in td:
+            if "Group - " in key:
+                td.append_data({"Group": td[key]}, Metadata(user, Metadata.get_call_location(), time.time()))
 
     for td in data:
         for plan in SURVEY_CODING_PLANS:
             if plan.coded_field in td:
-                try:
-                    td.append_data(
-                        {plan.analysis_file_key: code_ids[plan.code_scheme["Name"]][td[plan.coded_field]["CodeID"]]},
-                        Metadata(user, Metadata.get_call_location(), time.time())
-                        )
-                except KeyError:
-                    print(plan.code_scheme["Name"], td[plan.coded_field])
+                td.append_data(
+                    {plan.analysis_file_key: code_ids[plan.code_scheme["Name"]][td[plan.coded_field]["CodeID"]]},
+                    Metadata(user, Metadata.get_call_location(), time.time())
+                    )
+               
                
     column_keys = {
     "Message - Aisha",
@@ -239,6 +243,8 @@ if __name__ == "__main__":
 
     # Drop data without a key Group  TODO: Understand why some data doesn't have a group
     data = [td for td in data if "Group" in td]
+
+    data = [td for td in data if td.get("Message - Aisha") != "Kazi"]
 
     # TODO: For each td in data, if Message - x is in that td object, assert Message - x_Coded is too, and vice versa
 
@@ -257,9 +263,13 @@ if __name__ == "__main__":
 
     matrix_keys.sort()
 
+    equal_keys = ["avf_phone_id", "Group"]
+    equal_keys.extend(survey_keys)
+    equal_keys.extend(["Gender - Demog_survey", "Age - Demog_survey", "Location - Demog_survey"])
+
+
     folded = FoldTracedData.fold_iterable_of_traced_data(
-    user, data, lambda td: (td["avf_phone_id"], td["Group"]),
-    equal_keys={"avf_phone_id", "Group"}, column_keys=column_keys, matrix_keys=matrix_keys
+    user, data, lambda td: (td["avf_phone_id"], td["Group"]), equal_keys=equal_keys, column_keys=column_keys, matrix_keys=matrix_keys
     )
 
     # Determine which column keys were set by FoldTracedData.fold_iterable_of_traced_data
