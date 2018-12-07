@@ -60,101 +60,100 @@ if __name__ == "__main__":
             self.time_field = time_field
             self.run_id_field = run_id_field
             self.analysis_file_key = analysis_file_key
-            # self.id_field = "{}_id".format(self.raw_field)
 
     SURVEY_CODING_PLANS = [
-    CodingPlan(raw_field="Gender - Demog_survey",
+    CodingPlan(raw_field="Selected_Gender - Demog_survey",
                 coded_field="Gender - Demog_survey_Coded",
                 analysis_file_key="gender",
                 code_scheme=coding_schemes["Gender"]),
 
-    CodingPlan(raw_field="Age - Demog_survey",
+    CodingPlan(raw_field="Selected_Age - Demog_survey",
                 coded_field="Age - Demog_survey_Coded",
                 coda_filename="age",
                 analysis_file_key="age",
                 code_scheme=coding_schemes["Age"]),
 
-    CodingPlan(raw_field="Location - Demog_survey",
+    CodingPlan(raw_field="Selected_Location - Demog_survey",
                 coded_field="Location - Demog_survey_Coded",
                 analysis_file_key="location",
                 code_scheme=coding_schemes["Location"]),
 
-    CodingPlan(raw_field="Empirical_Expectations - Amina_survey",
+    CodingPlan(raw_field="Selected_Empirical_Expectations - Amina_survey",
                 coded_field="Empirical_Expectations - Amina_survey_Coded",
                 analysis_file_key="w1_emp_expect_dadaab",
                 code_scheme=coding_schemes["Empirical Expectations"]),
 
-    CodingPlan(raw_field="Empirical_Expectations - Aisha_survey",
+    CodingPlan(raw_field="Selected_Empirical_Expectations - Aisha_survey",
                 coded_field="Empirical_Expectations - Aisha_survey_Coded",
                 analysis_file_key="w2_emp_expect_dadaab",
                 code_scheme=coding_schemes["Empirical Expectations"]),
     
-    CodingPlan(raw_field="Empirical_Expectations - Mohamed_survey",
+    CodingPlan(raw_field="Selected_Empirical_Expectations - Mohamed_survey",
                 coded_field="Empirical_Expectations - Mohamed_survey_Coded",
                 analysis_file_key="w3_emp_expect_dadaab",
                 code_scheme=coding_schemes["Empirical Expectations"]),
 
-    CodingPlan(raw_field="Empirical_Expectations - Zamzam_survey",
+    CodingPlan(raw_field="Selected_Empirical_Expectations - Zamzam_survey",
                 coded_field="Empirical_Expectations - Zamzam_survey_Coded",
                 analysis_file_key="w4_emp_expect_dadaab",
                 code_scheme=coding_schemes["Empirical Expectations"]),
 
-    CodingPlan(raw_field="Normative_Expectations - Amina_survey",
+    CodingPlan(raw_field="Selected_Normative_Expectations - Amina_survey",
                 coded_field="Normative_Expectations - Amina_survey_Coded",
                 analysis_file_key="w1_norma_expect_dadaab",
                 code_scheme=coding_schemes["Normative Expectations"]),
 
-    CodingPlan(raw_field="Normative_Expectations - Aisha_survey",
+    CodingPlan(raw_field="Selected_Normative_Expectations - Aisha_survey",
                 coded_field="Normative_Expectations - Aisha_survey_Coded",
                 analysis_file_key="w2_norma_expect_dadaab",
                 code_scheme=coding_schemes["Normative Expectations"]),
     
-    CodingPlan(raw_field="Normative_Expectations - Mohamed_survey",
+    CodingPlan(raw_field="Selected_Normative_Expectations - Mohamed_survey",
                 coded_field="Normative_Expectations - Mohamed_survey_Coded",
                 analysis_file_key="w3_norma_expect_dadaab",
                 code_scheme=coding_schemes["Normative Expectations"]),
     
-    CodingPlan(raw_field="Normative_Expectations - Zamzam_survey",
+    CodingPlan(raw_field="Selected_Normative_Expectations - Zamzam_survey",
                 coded_field="Normative_Expectations - Zamzam_survey_Coded",
                 analysis_file_key="w4_norma_expect_dadaab",
                 code_scheme=coding_schemes["Normative Expectations"]),
 
-    CodingPlan(raw_field="Parenthood - Amina_survey",
+    CodingPlan(raw_field="Selected_Parenthood - Amina_survey",
                 coded_field="Parenthood - Amina_survey_Coded",
                 analysis_file_key="w1_parenthood_dadaab",
                 code_scheme=coding_schemes["NoYes"]),
 
-    CodingPlan(raw_field="Parenthood - Aisha_survey",
+    CodingPlan(raw_field="Selected_Parenthood - Aisha_survey",
                 coded_field="Parenthood - Aisha_survey_Coded",
                 analysis_file_key="w2_parenthood_dadaab",
                 code_scheme=coding_schemes["NoYes"]),
 
-    CodingPlan(raw_field="Parenthood - Mohamed_survey",
+    CodingPlan(raw_field="Selected_Parenthood - Mohamed_survey",
                 coded_field="Parenthood - Mohamed_survey_Coded",
                 analysis_file_key="w3_parenthood_dadaab",
                 code_scheme=coding_schemes["NoYes"]),
 
-    CodingPlan(raw_field="Parenthood - Zamzam_survey",
+    CodingPlan(raw_field="Selected_Parenthood - Zamzam_survey",
                 coded_field="Parenthood - Zamzam_survey_Coded",
                 analysis_file_key="w4_parenthood_dadaab",
                 code_scheme=coding_schemes["NoYes"]),
 
-    CodingPlan(raw_field="Sanctions - Amina_survey",
+    CodingPlan(raw_field="Selected_Sanctions - Amina_survey",
                 coded_field="Sanctions - Amina_survey_Coded",
                 analysis_file_key="w1_sanctions_dadaab",
                 code_scheme=coding_schemes["Approval"]),
 
-    CodingPlan(raw_field="Sanctions - Aisha_survey",
+    CodingPlan(raw_field="Selected_Sanctions - Aisha_survey",
                 coded_field="Sanctions - Aisha_survey_Coded",
                 analysis_file_key="w2_sanctions_dadaab",
                 code_scheme=coding_schemes["Approval"]),
 
-    CodingPlan(raw_field="Sanctions - Mohamed_survey",
+    CodingPlan(raw_field="Selected_Sanctions - Mohamed_survey",
                 coded_field="Sanctions - Mohamed_survey_Coded",
                 analysis_file_key="w3_sanctions_dadaab",
                 code_scheme=coding_schemes["Approval"]),
 
-    CodingPlan(raw_field="Sanctions - Zamzam_survey",
+    CodingPlan(raw_field="Selected_Sanctions - Zamzam_survey",
                 coded_field="Sanctions - Zamzam_survey_Coded",
                 analysis_file_key="w4_sanctions_dadaab",
                 code_scheme=coding_schemes["Approval"])
@@ -162,42 +161,42 @@ if __name__ == "__main__":
 
     MATRIX_CODING_PLANS = [
 
-    CodingPlan(raw_field="Reference_Groups - Amina_survey",
+    CodingPlan(raw_field="Selected_Reference_Groups - Amina_survey",
                 coded_field="Reference_Groups - Amina_survey_Coded",
                 analysis_file_key="w1_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
-    CodingPlan(raw_field="Reference_Groups - Aisha_survey",
+    CodingPlan(raw_field="Selected_Reference_Groups - Aisha_survey",
                 coded_field="Reference_Groups - Aisha_survey_Coded",
                 analysis_file_key="w2_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
-    CodingPlan(raw_field="Reference_Groups - Mohamed_survey",
+    CodingPlan(raw_field="Selected_Reference_Groups - Mohamed_survey",
                 coded_field="Reference_Groups - Mohamed_survey_Coded",
                 analysis_file_key="w3_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
-    CodingPlan(raw_field="Reference_Groups - Zamzam_survey",
+    CodingPlan(raw_field="Selected_Reference_Groups - Zamzam_survey",
                 coded_field="Reference_Groups - Zamzam_survey_Coded",
                 analysis_file_key="w4_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
-    CodingPlan(raw_field="Reference_Groups_Others - Amina_survey",
+    CodingPlan(raw_field="Selected_Reference_Groups_Others - Amina_survey",
                 coded_field="Reference_Groups_Others - Amina_survey_Coded",
                 analysis_file_key="w1_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
-    CodingPlan(raw_field="Reference_Groups_Others - Aisha_survey",
+    CodingPlan(raw_field="Selected_Reference_Groups_Others - Aisha_survey",
                 coded_field="Reference_Groups_Others - Aisha_survey_Coded",
                 analysis_file_key="w2_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
-    CodingPlan(raw_field="Reference_Groups_Others - Mohamed_survey",
+    CodingPlan(raw_field="Selected_Reference_Groups_Others - Mohamed_survey",
                 coded_field="Reference_Groups_Others - Mohamed_survey_Coded",
                 analysis_file_key="w3_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"]),
 
-    CodingPlan(raw_field="Reference_Groups_Others - Zamzam_survey",
+    CodingPlan(raw_field="Selected_Reference_Groups_Others - Zamzam_survey",
                 coded_field="Reference_Groups_Others - Zamzam_survey_Coded",
                 analysis_file_key="w4_ref_groups_dadaab_",
                 code_scheme=coding_schemes["Reference group and Reference Group Others"])
@@ -214,13 +213,15 @@ if __name__ == "__main__":
             survey_keys.append(plan.analysis_file_key)
         if plan.raw_field not in survey_keys:
             survey_keys.append(plan.raw_field)
-    print(survey_keys)
+
+    survey_keys.sort()
 
     for td in data:
         for key in td:
             if "Group - " in key:
                 td.append_data({"Group": td[key]}, Metadata(user, Metadata.get_call_location(), time.time()))
 
+    print("Creating survey analysis keys/coded values")
     for td in data:
         for plan in SURVEY_CODING_PLANS:
             if plan.coded_field in td:
@@ -228,7 +229,16 @@ if __name__ == "__main__":
                     {plan.analysis_file_key: code_ids[plan.code_scheme["Name"]][td[plan.coded_field]["CodeID"]]},
                     Metadata(user, Metadata.get_call_location(), time.time())
                     )
-               
+            else:
+                td.append_data({plan.analysis_file_key: Codes.TRUE_MISSING},
+                    Metadata(user, Metadata.get_call_location(), time.time())
+                    )
+                td.append_data({plan.coded_field: Codes.TRUE_MISSING},
+                    Metadata(user, Metadata.get_call_location(), time.time())
+              )     
+            
+            # DEBUG: above returns correct keys with corresponding codes eg. "w3_sanctions_dadaab disapprove"
+            print(plan.analysis_file_key, td[plan.analysis_file_key])    
                
     column_keys = {
     "Message - Aisha",
@@ -241,23 +251,33 @@ if __name__ == "__main__":
     "Message - Zamzam_Coded"
     }
 
+    coded_column_keys = ["Message - Aisha_Coded", "Message - Amina_Coded", "Message - Mohamed_Coded", "Message - Zamzam_Coded"]
+
     # Drop data without a key Group  TODO: Understand why some data doesn't have a group
     data = [td for td in data if "Group" in td]
 
     data = [td for td in data if td.get("Message - Aisha") != "Kazi"]
+
+    print("Creating message column analysis keys/coded values")
+    for td in data:
+        for key in coded_column_keys:
+            if key in td:
+                td.append_data({key: code_ids["Dadaab Themes"][td[key]["CodeID"]]}, 
+                Metadata(user, Metadata.get_call_location(), time.time()))  
 
     # TODO: For each td in data, if Message - x is in that td object, assert Message - x_Coded is too, and vice versa
 
     # Translate keys to final values for analysis
     matrix_keys = []
 
+    print("Creating matrix analysis keys/coded values")
     for plan in MATRIX_CODING_PLANS:
         show_matrix_keys = set()
         for code in code_ids[plan.code_scheme["Name"]]:
             show_matrix_keys.add(f"{plan.analysis_file_key}{code_ids[plan.code_scheme['Name']][code]}")
 
         AnalysisKeys.set_matrix_keys(
-            user, data, show_matrix_keys, plan.code_scheme, plan.coded_field, plan.analysis_file_key)
+            user, data, show_matrix_keys, plan.code_scheme, code_ids, plan.coded_field, plan.analysis_file_key)
 
         matrix_keys.extend(show_matrix_keys)
 
@@ -265,8 +285,6 @@ if __name__ == "__main__":
 
     equal_keys = ["avf_phone_id", "Group"]
     equal_keys.extend(survey_keys)
-    equal_keys.extend(["Gender - Demog_survey", "Age - Demog_survey", "Location - Demog_survey"])
-
 
     folded = FoldTracedData.fold_iterable_of_traced_data(
     user, data, lambda td: (td["avf_phone_id"], td["Group"]), equal_keys=equal_keys, column_keys=column_keys, matrix_keys=matrix_keys
@@ -290,13 +308,18 @@ if __name__ == "__main__":
         td.append_data(d, Metadata(user, Metadata.get_call_location(), time.time()))
 
     # Export to CSV
-    export_keys = list(folded_column_keys)
-    export_keys.extend({"avf_phone_id", "Group"})
-    export_keys.extend(matrix_keys)
+    export_keys = ["avf_phone_id", "Group"]
+    export_keys.extend(list(folded_column_keys))
     export_keys.extend(survey_keys)
+    # export_keys.extend({"avf_phone_id", "Group"})
+    export_keys.extend(matrix_keys)
     export_keys.sort()
-
+    
     with open(csv_by_individual_output_path, "w") as f:
         TracedDataCSVIO.export_traced_data_iterable_to_csv(folded, f, headers=export_keys)
 
+    """
+    with open(csv_by_message_output_path, "w") as f:
+        TracedDataCSVIO.export_traced_data_iterable_to_csv(data, f, headers=export_keys)        
+    """
 

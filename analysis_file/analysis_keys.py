@@ -17,12 +17,13 @@ class AnalysisKeys(object):
         return isoparse(td["created_on"]).astimezone(pytz.timezone("Africa/Nairobi")).strftime("%Y-%m-%d %H:%M")
 
     @staticmethod
-    def set_matrix_keys(user, data, all_matrix_keys, scheme, coded_key, matrix_prefix=""):
+    def set_matrix_keys(user, data, all_matrix_keys, code_scheme, code_ids, coded_key, matrix_prefix=""):
         for td in data:
             matrix_d = dict()
 
             for label in td.get(coded_key, []):
-                matrix_d[f"{matrix_prefix}{scheme.get_code_with_id(label['CodeID']).string_value}"] = Codes.MATRIX_1
+                print(code_ids[plan.code_scheme['Name']][label]['CodeID'])
+                matrix_d[f"{matrix_prefix}{code_ids[plan.code_scheme['Name']][label]['CodeID']}"] = Codes.MATRIX_1
 
             for key in all_matrix_keys:
                 if key not in matrix_d:
