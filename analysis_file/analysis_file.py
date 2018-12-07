@@ -311,7 +311,6 @@ if __name__ == "__main__":
     export_keys = ["avf_phone_id", "Group"]
     export_keys.extend(list(folded_column_keys))
     export_keys.extend(survey_keys)
-    # export_keys.extend({"avf_phone_id", "Group"})
     export_keys.extend(matrix_keys)
     export_keys.sort()
     
