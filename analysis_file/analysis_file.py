@@ -33,8 +33,8 @@ if __name__ == "__main__":
 
     for filename in os.listdir(coding_schemes_path):
         with open(os.path.join(coding_schemes_path, filename)) as f:
+            # TODO: Switch to use Scheme.from_firebase_map()
             coding_schemes[filename.split(".json")[0]] = json.load(f)
-
     
     code_ids = dict()
     for scheme in coding_schemes:
@@ -238,7 +238,7 @@ if __name__ == "__main__":
               )     
             
             # DEBUG: above returns correct keys with corresponding codes eg. "w3_sanctions_dadaab disapprove"
-            print(plan.analysis_file_key, td[plan.analysis_file_key])    
+            # print(plan.analysis_file_key, td[plan.analysis_file_key])
                
     column_keys = {
     "Message - Aisha",
@@ -254,9 +254,18 @@ if __name__ == "__main__":
     coded_column_keys = ["Message - Aisha_Coded", "Message - Amina_Coded", "Message - Mohamed_Coded", "Message - Zamzam_Coded"]
 
     # Drop data without a key Group  TODO: Understand why some data doesn't have a group
-    data = [td for td in data if "Group" in td]
+    # print(f"Before dropping groups: {len(data)}")
+    # data = [td for td in data if "Group" in td]
+    # print(f"After dropping groups: {len(data)}")
+
+    # TODO: Remove this temporary group workaround.
+    for td in data:
+        if "Group" not in td:
+            import secrets
+            td.append_data({"Group": secrets.token_hex(8)}, Metadata(user, Metadata.get_call_location(), time.time()))
 
     data = [td for td in data if td.get("Message - Aisha") != "Kazi"]
+    print(f"After filtering kazi: {len(data)}")
 
     print("Creating message column analysis keys/coded values")
     for td in data:
@@ -277,7 +286,7 @@ if __name__ == "__main__":
             show_matrix_keys.add(f"{plan.analysis_file_key}{code_ids[plan.code_scheme['Name']][code]}")
 
         AnalysisKeys.set_matrix_keys(
-            user, data, show_matrix_keys, plan.code_scheme, code_ids, plan.coded_field, plan.analysis_file_key)
+            user, data, show_matrix_keys, plan, code_ids, plan.coded_field, plan.analysis_file_key)
 
         matrix_keys.extend(show_matrix_keys)
 
@@ -286,9 +295,12 @@ if __name__ == "__main__":
     equal_keys = ["avf_phone_id", "Group"]
     equal_keys.extend(survey_keys)
 
+    print("Folding")
     folded = FoldTracedData.fold_iterable_of_traced_data(
     user, data, lambda td: (td["avf_phone_id"], td["Group"]), equal_keys=equal_keys, column_keys=column_keys, matrix_keys=matrix_keys
     )
+
+    print("Post fold fix-up")
 
     # Determine which column keys were set by FoldTracedData.fold_iterable_of_traced_data
     folded_column_keys = set()
@@ -313,12 +325,15 @@ if __name__ == "__main__":
     export_keys.extend(survey_keys)
     export_keys.extend(matrix_keys)
     export_keys.sort()
-    
+
+    print("Writing 1/2")
     with open(csv_by_individual_output_path, "w") as f:
         TracedDataCSVIO.export_traced_data_iterable_to_csv(folded, f, headers=export_keys)
 
-    """
+    print("Writing 2/2")
+    # Hack an unused output field to write traced data to (for debug)
+    # FIXME
     with open(csv_by_message_output_path, "w") as f:
-        TracedDataCSVIO.export_traced_data_iterable_to_csv(data, f, headers=export_keys)        
-    """
+        TracedDataJsonIO.export_traced_data_iterable_to_json(data, f, pretty_print=True)
+        # TracedDataCSVIO.export_traced_data_iterable_to_csv(data, f, headers=export_keys)
 
