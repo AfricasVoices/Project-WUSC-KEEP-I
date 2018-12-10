@@ -9,6 +9,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Merges data from show inboxes and survery responses")
     parser.add_argument("user", help="User launching this program, for audit logging", nargs=1)
     parser.add_argument("input_messages", help="Path to input messages file, containing a list of TracedData objects as JSON", nargs=1)
+    parser.add_argument("group", help="Name of the group to be added", nargs=1)
     parser.add_argument("input_adverts", help="Path to input adverts file, containing a list of TracedData objects as JSON", nargs=1)
     parser.add_argument("json_output", metavar="json-output",
                         help="Path to write results of merging to, as a serialised TracedData JSON file", nargs=1)
@@ -16,6 +17,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     user = args.user[0]
     input_path_messages = args.input_messages[0]
+    group = args.group[0]
     input_path_adverts = args.input_adverts[0]
     json_output_path = args.json_output[0]
 
@@ -33,7 +35,8 @@ if __name__ == "__main__":
         td.append_data(
             { 
                 "Message" : td["QUESTION_R"],
-                "Date" : td["start_date"]
+                "Date" : td["start_date"],
+                "Group": group
             }, 
             Metadata(user, Metadata.get_call_location(), time.time()))
 
