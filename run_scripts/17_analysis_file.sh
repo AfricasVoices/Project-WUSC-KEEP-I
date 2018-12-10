@@ -3,7 +3,7 @@
 set -e
 
 if [ $# -ne 3 ]; then
-    echo "Usage: sh 13_analysis_file.sh <user> <data-root> <code_scheme_root>"
+    echo "Usage: sh 17_analysis_file.sh <user> <data-root> <code_scheme_root>"
     echo "Outputs individual-based analysis file"
     exit
 fi

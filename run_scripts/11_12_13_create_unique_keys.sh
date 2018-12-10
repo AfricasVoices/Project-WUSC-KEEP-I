@@ -3,7 +3,7 @@
 set -e
 
 if [ $# -ne 2 ]; then
-    echo "Usage: sh 11_create_unique_keys.sh <user> <data-root>"
+    echo "Usage: sh 11_12_13_create_unique_keys.sh <user> <data-root>"
     echo "Adds group name to varibles in messages, surveys and demogs"
     exit
 fi

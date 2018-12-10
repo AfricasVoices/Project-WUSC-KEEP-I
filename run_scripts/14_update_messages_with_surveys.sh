@@ -3,7 +3,7 @@
 set -e
 
 if [ $# -ne 2 ]; then
-    echo "Usage: sh 12_update_messages_with_surveys <user> <data-root>"
+    echo "Usage: sh 14_update_messages_with_surveys <user> <data-root>"
     echo "Merges messages, surveys and demogs"
     exit
 fi
