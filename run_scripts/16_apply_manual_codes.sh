@@ -3,7 +3,7 @@
 set -e
 
 if [ $# -ne 3 ]; then
-    echo "Usage: sh 13_apply_manual_codes.sh <user> <data-root>"
+    echo "Usage: sh 16_apply_manual_codes.sh <user> <data-root> <scheme-dir>"
     echo "Adds manually coded labels to messages"
     exit
 fi
