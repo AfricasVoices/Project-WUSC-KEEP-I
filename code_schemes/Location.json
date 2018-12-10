@@ -59,6 +59,16 @@
       "VisibleInCoda": true
     },
     {
+      "CodeID": "code-NR-5e3eee23",
+      "CodeType": "Control",
+      "ControlCode": "NR",
+      "DisplayText": "NR (not reviewed)",
+      "NumericValue": -40,
+      "StringValue": "NR",
+      "VisibleInCoda": false
+    },
+
+    {
       "CodeID": "code-WS-adb25603b7af",
       "CodeType": "Control",
       "ControlCode": "WS",
