@@ -1,0 +1,232 @@
+{
+  "Codes": [
+    {
+      "CodeID": "code-6e49c8f2bba3", 
+      "CodeType": "Normal", 
+      "DisplayText": "Inbox_Aisha", 
+      "NumericValue": 0, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-e3b32d7a4ffb", 
+      "CodeType": "Normal", 
+      "DisplayText": "Inbox_Amina", 
+      "NumericValue": 1, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-b4007d8c0fa5", 
+      "CodeType": "Normal", 
+      "DisplayText": "Inbox_Mohamed", 
+      "NumericValue": 2, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-075ee91c6ddb", 
+      "CodeType": "Normal", 
+      "DisplayText": "Inbox_Zamzam", 
+      "NumericValue": 3, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-c2cf9e4e3016", 
+      "CodeType": "Normal", 
+      "DisplayText": "Demogs_Age", 
+      "NumericValue": 4, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-daa3c33b9e5b", 
+      "CodeType": "Normal", 
+      "DisplayText": "Demogs_Gender", 
+      "NumericValue": 5, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-35b2c5c55a5f", 
+      "CodeType": "Normal", 
+      "DisplayText": "Demogs_Locations", 
+      "NumericValue": 6, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-5816d8cc5ae4", 
+      "CodeType": "Normal", 
+      "DisplayText": "Aisha_Empirical_Expectations", 
+      "NumericValue": 7, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-1056beb8e95a", 
+      "CodeType": "Normal", 
+      "DisplayText": "Aisha_Normative_Expectations", 
+      "NumericValue": 8, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-680a279def74", 
+      "CodeType": "Normal", 
+      "DisplayText": "Aisha_Parenthood", 
+      "NumericValue": 9, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-bda79ce52f54", 
+      "CodeType": "Normal", 
+      "DisplayText": "Aisha_Reference_Groups", 
+      "NumericValue": 10, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-d23abbf2ce3d", 
+      "CodeType": "Normal", 
+      "DisplayText": "Aisha_Reference_Groups_Others", 
+      "NumericValue": 11, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-572e99d49e15", 
+      "CodeType": "Normal", 
+      "DisplayText": "Aisha_Sanctions", 
+      "NumericValue": 12, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-3db4d24996f3", 
+      "CodeType": "Normal", 
+      "DisplayText": "Amina_Empirical_Expectations", 
+      "NumericValue": 13, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-1a3c617cae67", 
+      "CodeType": "Normal", 
+      "DisplayText": "Amina_Normative_Expectations", 
+      "NumericValue": 14, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-bf29a7b6cb82", 
+      "CodeType": "Normal", 
+      "DisplayText": "Amina_Parenthood", 
+      "NumericValue": 15, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-6df5ef0a3e09", 
+      "CodeType": "Normal", 
+      "DisplayText": "Amina_Reference_Groups", 
+      "NumericValue": 16, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-990e9335223e", 
+      "CodeType": "Normal", 
+      "DisplayText": "Amina_Reference_Groups_Others", 
+      "NumericValue": 17, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-67be51f81647", 
+      "CodeType": "Normal", 
+      "DisplayText": "Amina_Sanctions", 
+      "NumericValue": 18, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-6c138acf6693", 
+      "CodeType": "Normal", 
+      "DisplayText": "Mohamed_Empirical_Expectations", 
+      "NumericValue": 19, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-88021e17e7b0", 
+      "CodeType": "Normal", 
+      "DisplayText": "Mohamed_Normative_Expectations", 
+      "NumericValue": 20, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-918ef3c147af", 
+      "CodeType": "Normal", 
+      "DisplayText": "Mohamed_Parenthood", 
+      "NumericValue": 21, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-0f21e066ec59", 
+      "CodeType": "Normal", 
+      "DisplayText": "Mohamed_Reference_Groups", 
+      "NumericValue": 22, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-9125085a480b", 
+      "CodeType": "Normal", 
+      "DisplayText": "Mohamed_Reference_Groups_Others", 
+      "NumericValue": 23, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-0fe16d2b510a", 
+      "CodeType": "Normal", 
+      "DisplayText": "Mohamed_Sanctions", 
+      "NumericValue": 24, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-d500a7c07cd7", 
+      "CodeType": "Normal", 
+      "DisplayText": "Zamzam_Empirical_Expectations", 
+      "NumericValue": 25, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-a191c42b91c2", 
+      "CodeType": "Normal", 
+      "DisplayText": "Zamzam_Normative_Expectations", 
+      "NumericValue": 26, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-a8c977b7686e", 
+      "CodeType": "Normal", 
+      "DisplayText": "Zamzam_Parenthood", 
+      "NumericValue": 27, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-59959767b909", 
+      "CodeType": "Normal", 
+      "DisplayText": "Zamzam_Reference_Groups", 
+      "NumericValue": 28, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-fcc3969d1ff4", 
+      "CodeType": "Normal", 
+      "DisplayText": "Zamzam_Reference_Groups_Others", 
+      "NumericValue": 29, 
+      "VisibleInCoda": true
+    }, 
+    {
+      "CodeID": "code-6162b81ea647", 
+      "CodeType": "Normal", 
+      "DisplayText": "Zamzam_Sanctions", 
+      "NumericValue": 30, 
+      "VisibleInCoda": true
+    },
+    {
+      "CodeID": "code-NC-42f1d983", 
+      "CodeType": "Control", 
+      "ControlCode": "NC", 
+      "DisplayText": "NC (not coded)", 
+      "NumericValue": -30, 
+      "VisibleInCoda": true
+    }
+  ], 
+  "Name": "WS - Correct Dataset", 
+  "SchemeID": "Scheme-fff774bb5099",
+  "Version": "0.0.0.1"
+}
