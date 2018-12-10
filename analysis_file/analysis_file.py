@@ -60,7 +60,6 @@ if __name__ == "__main__":
             self.time_field = time_field
             self.run_id_field = run_id_field
             self.analysis_file_key = analysis_file_key
-
     SURVEY_CODING_PLANS = [
     CodingPlan(raw_field="Selected_Gender - Demog_survey",
                 coded_field="Gender - Demog_survey_Coded",
@@ -317,6 +316,7 @@ if __name__ == "__main__":
         for key in folded_column_keys:
             if key not in td:
                 d[key] = Codes.TRUE_MISSING
+
         td.append_data(d, Metadata(user, Metadata.get_call_location(), time.time()))
 
     # Export to CSV
@@ -336,4 +336,3 @@ if __name__ == "__main__":
     with open(csv_by_message_output_path, "w") as f:
         TracedDataJsonIO.export_traced_data_iterable_to_json(data, f, pretty_print=True)
         # TracedDataCSVIO.export_traced_data_iterable_to_csv(data, f, headers=export_keys)
-
