@@ -32,7 +32,7 @@ do
     OUTPUT="${SHOWS_AND_ADVERTS[3 * i + 2]}"
 
     echo $INPUT_1 $INPUT_2 $OUTPUT
-    sh docker-run.sh "$USER" "$DATA_DIR/01 Raw Messages/$INPUT_1.json" \
+    sh docker-run.sh "$USER" "$DATA_DIR/01 Raw Messages/$INPUT_1.json" "$INPUT_1" \
         "$DATA_DIR/02 Raw Surveys/$INPUT_2.json" "$DATA_DIR/03 Messages Merged/$OUTPUT.json"
 done
 

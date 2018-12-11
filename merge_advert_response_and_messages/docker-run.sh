@@ -2,21 +2,22 @@
 
 set -e
 
-if [ $# -ne 4 ]; then
-    echo "Usage: sh docker-run.sh <user> <input-file-messages> <input-file-adverts-responses> <output-file>"
+if [ $# -ne 5 ]; then
+    echo "Usage: sh docker-run.sh <user> <input-file-messages> <group-name> <input-file-adverts-responses> <output-file>"
     exit
 fi
 
 USER=$1
 INPUT_JSON_MESSAGES=$2
-INPUT_JSON_ADVERTS=$3
-OUTPUT_JSON=$4
+GROUP=$3
+INPUT_JSON_ADVERTS=$4
+OUTPUT_JSON=$5
 
 # Build an image for this project, called "wusc-keep-merge-messages".
 docker build -t wusc-keep-merge-messages .
 
 # Create a container from the image that was just built.
-container="$(docker container create --env USER="$USER" wusc-keep-merge-messages)"
+container="$(docker container create --env USER="$USER" --env GROUP="$GROUP" wusc-keep-merge-messages)"
 
 function finish {
     # Tear down the container when done.
