@@ -3,7 +3,7 @@
 set -e
 
 if [ $# -ne 3 ]; then
-    echo "Usage: sh 15_download_coded_data.sh <data-root> <coda-root> <coda-crypto-token>"
+    echo "Usage: sh 115_download_coded_data.sh <data-root> <coda-root> <coda-crypto-token>"
     echo "Downloads labelled messages for reallocating WS data"
     exit
 fi
@@ -12,7 +12,7 @@ DATA_DIR=$1
 CODA_DIR=$2
 CRYPTO_TOKEN=$3
 
-mkdir -p "$DATA_DIR/15 Coded Messages"
+mkdir -p "$DATA_DIR/115 Coded Messages"
 
 cd $CODA_DIR/data_tools
 
@@ -54,7 +54,7 @@ DATASET_NAMES=(
 for DATASET in "${DATASET_NAMES[@]}"
 do
     # echo "pipenv run python get.py" "$CRYPTO_TOKEN" "$DATASET" messages > "$DATA_DIR/20 Data for WS Migration/$DATASET.json"
-    pipenv run python get.py "$CRYPTO_TOKEN" "$DATASET" messages > "$DATA_DIR/15 Coded Messages/${DATASET}.json"
+    pipenv run python get.py "$CRYPTO_TOKEN" "$DATASET" messages > "$DATA_DIR/115 Coded Messages/${DATASET}.json"
 done
 
 
