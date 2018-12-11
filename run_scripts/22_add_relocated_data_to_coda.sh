@@ -12,8 +12,6 @@ DATA_DIR=$1
 CODA_DIR=$2
 CRYPTO_TOKEN=$3
 
-# mkdir -p "$DATA_DIR/20 Data for WS Migration"
-
 cd $CODA_DIR/data_tools
 
 DATASET_NAMES=(
