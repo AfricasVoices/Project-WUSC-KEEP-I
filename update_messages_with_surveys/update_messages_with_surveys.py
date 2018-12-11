@@ -48,7 +48,7 @@ if __name__ == "__main__":
     survey_datasets = []
     for filename in os.listdir(survey_input_path):
         with open(os.path.join(survey_input_path, filename)) as f:
-            messages_datasets.append(TracedDataJsonIO.import_json_to_traced_data_iterable(f))
+            survey_datasets.append(TracedDataJsonIO.import_json_to_traced_data_iterable(f))
 
     # Load demogs
     print("Loading Demographics...")
