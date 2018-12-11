@@ -261,6 +261,8 @@ if __name__ == "__main__":
     for td in data:
         if "Group" not in td:
             import secrets
+            print("Warning - group not in tracedata: {}".format(td))
+
             td.append_data({"Group": secrets.token_hex(8)}, Metadata(user, Metadata.get_call_location(), time.time()))
 
     data = [td for td in data if td.get("Message - Aisha") != "Kazi"]
