@@ -60,7 +60,7 @@ def remap(id, dataset_in_principle, fixup_table, code_schemes):
 
             new_code_string_value = code["DisplayText"]
 
-            print ("{}, {}, {}, {}, {}, {}, {}".format(avf_phone_id, fix["Text"].replace(",", " "), dataset_in_principle, destination, new_code_scheme, new_code_id, new_code_string_value))
+            print ("{}; {}; {}; {}; {}; {}; {}".format(avf_phone_id, fix["Text"].replace(";", ","), dataset_in_principle, destination, new_code_scheme, new_code_id, new_code_string_value))
 
 
 
@@ -86,7 +86,7 @@ if __name__ == "__main__":
 
     code_schemes_in_folder = args.code_schemes_in_folder[0]
 
-    print ("{}, {}, {}, {}, {}, {}, {}".format("avf_phone_id", "Text", "Origin dataset", "Destination dataset", "new_code_scheme", "new_code_id", "new value"))
+    print ("{}; {}; {}; {}; {}; {}; {}".format("avf_phone_id", "Text", "Origin dataset", "Destination dataset", "new_code_scheme", "new_code_id", "new value"))
 
     # print ("Loading coda fixup table")
     fixup_table = json.load(open(fixup_table_path, 'r'))
