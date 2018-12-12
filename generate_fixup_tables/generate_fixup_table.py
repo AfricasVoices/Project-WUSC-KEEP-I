@@ -54,25 +54,59 @@ if __name__ == "__main__":
 
     remappings = []
 
+    datasets_messages = {}
     for dataset_name in dataset_names:
         dataset_path = os.path.join(input_data_folder, dataset_name)
         src_dataset = dataset_name.split('.')[0]
 
         messages = json.load(open(dataset_path, 'r'))
+        datasets_messages[src_dataset] = messages
+
+
+    for dataset_name in dataset_names:
+        dataset_path = os.path.join(input_data_folder, dataset_name)
+        src_dataset = dataset_name.split('.')[0]
+
+        messages = datasets_messages[src_dataset]
         for message in messages:
             msg_id = message["MessageID"]
             msg_text = message["Text"]
             for label in message["Labels"]:
                 if label["SchemeID"] == WS_Scheme:
                     if label["CodeID"] == 'SPECIAL-MANUALLY_UNCODED':
-                        continue
+                        break
                     renamp_target = code_to_dataset[label["CodeID"]]
+
+                    # Now look up what it got remapped to
+                    remapped_in_dataset_messages = datasets_messages[renamp_target]
+                    messages = [m for m in remapped_in_dataset_messages if m["MessageID"] == msg_id]
+                    
+                    # print (message)
+                    # print (len(messages))
+                    assert (len(messages) == 1)
+                    new_message = messages[0]
+                    assert (new_message["Text"] == msg_text)
+                    new_label_code_id = None
+                    new_label_scheme_id = None
+
+                    for new_label in new_message["Labels"]:
+                        if new_label["SchemeID"] == WS_Scheme:
+                            continue
+                        if new_label["CodeID"] == 'SPECIAL-MANUALLY_UNCODED':
+                            continue
+                        
+                        new_label_code_id = new_label["CodeID"]
+                        new_label_scheme_id = new_label["SchemeID"]
+                        break
+
                     remappings.append(
                         {
                             "MessageID" : msg_id,
                             "Text" : msg_text, # Non canonical, used for debugging
                             "SourceDataset" : src_dataset,
-                            "DestinationDataset" : renamp_target
+                            "DestinationDataset" : renamp_target,
+                            "Remapped_CodeID": new_label_code_id,
+                            "Remapped_SchemeID": new_label_scheme_id,
                         }
                     )
                     break
