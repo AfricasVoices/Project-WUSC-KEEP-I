@@ -54,7 +54,7 @@ DATASET_NAMES=(
 for DATASET in "${DATASET_NAMES[@]}"
 do
     # echo "pipenv run python get.py" "$CRYPTO_TOKEN" "$DATASET" messages > "$DATA_DIR/20 Data for WS Migration/$DATASET.json"
-    pipenv run python get.py "$CRYPTO_TOKEN" "$DATASET" messages > "$DATA_DIR/115 Coded Messages/${DATASET}.json"
+    pipenv run python get.py "$CRYPTO_TOKEN" "$DATASET" messages > "$DATA_DIR/115 Coded Messages to Filter/${DATASET}.json"
 done
 
 
