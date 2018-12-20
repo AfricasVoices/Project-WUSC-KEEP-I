@@ -29,6 +29,6 @@ do
     echo "sh docker-run.sh" "$USER" "$DATA_DIR/05 Messages with ID/${SHOW}_with_id.json" \
         "$DATA_DIR/06 Messages For Coda2/${SHOW}_messages_for_Coda2.json"
 
-    sh docker-run.sh "$USER" "$DATA_DIR/05 Messages with ID/${SHOW}_with_id.json" \
+    ./ docker-run.sh "$USER" "$DATA_DIR/05 Messages with ID/${SHOW}_with_id.json" \
         "$DATA_DIR/06 Messages For Coda2/${SHOW}_messages_for_Coda2.json"
 done

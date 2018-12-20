@@ -293,12 +293,12 @@ if __name__ == "__main__":
 
     matrix_keys.sort()
 
-    equal_keys = ["avf_phone_id", "Group"]
+    equal_keys = ["avf_phone_id"]
     equal_keys.extend(survey_keys)
 
     print("Folding")
     folded = FoldTracedData.fold_iterable_of_traced_data(
-    user, data, lambda td: (td["avf_phone_id"], td["Group"]), equal_keys=equal_keys, column_keys=column_keys, matrix_keys=matrix_keys
+    user, data, lambda td: (td["avf_phone_id"]), equal_keys=equal_keys, column_keys=column_keys, matrix_keys=matrix_keys
     )
 
     print("Post fold fix-up")
