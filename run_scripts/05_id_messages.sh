@@ -29,6 +29,6 @@ do
     echo "sh docker-run.sh" "$USER" "$DATA_DIR/04 Clean Messages/${SHOW}_clean.json" \
         "$DATA_DIR/05 Messages with ID/${SHOW}_with_id.json"
 
-    sh docker-run.sh "$USER" "$DATA_DIR/04 Clean Messages/${SHOW}_clean.json" \
+    bash docker-run.sh "$USER" "$DATA_DIR/04 Clean Messages/${SHOW}_clean.json" \
         "$DATA_DIR/05 Messages with ID/${SHOW}_with_id.json"
 done

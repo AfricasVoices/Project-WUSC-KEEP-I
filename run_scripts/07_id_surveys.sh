@@ -32,6 +32,6 @@ do
     echo "sh docker-run.sh" "$USER" "$DATA_DIR/02 Raw Surveys/${INPUT}.json" \
         "$DATA_DIR/07 Surveys with ID/${OUTPUT}.json"
 
-    sh docker-run.sh "$USER" "$DATA_DIR/02 Raw Surveys/${INPUT}.json" \
+    ./docker-run.sh "$USER" "$DATA_DIR/02 Raw Surveys/${INPUT}.json" \
         "$DATA_DIR/07 Surveys with ID/${OUTPUT}.json"
 done

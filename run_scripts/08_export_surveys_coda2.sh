@@ -40,7 +40,7 @@ do
         echo "sh docker-run.sh" "$USER" "$DATA_DIR/07 Surveys with ID/${SURVEY}_survey_with_id.json" ${VAR_NAME} \
             "$DATA_DIR/08 Surveys For Coda2/${SURVEY}_${VAR_NAME}_survey_for_Coda2.json"
 
-        sh docker-run.sh "$USER" "$DATA_DIR/07 Surveys with ID/${SURVEY}_survey_with_id.json" ${VAR_NAME} \
+        ./docker-run.sh "$USER" "$DATA_DIR/07 Surveys with ID/${SURVEY}_survey_with_id.json" ${VAR_NAME} \
             "$DATA_DIR/08 Surveys For Coda2/${SURVEY}_${VAR_NAME}_survey_for_Coda2.json"
     done
 done
